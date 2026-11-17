@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Asisten Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="topbar">
+            <h1>Asisten Chat</h1>
+            <button id="resetBtn" class="ghost" type="button">Percakapan baru</button>
+        </header>
+
+        <main id="chat" class="chat" aria-live="polite">
+            <div id="empty" class="empty">
+                <p class="empty-title">Mau tanya apa hari ini?</p>
+                <p class="empty-hint">Tulis pertanyaan di bawah, lalu tekan Enter untuk mengirim.</p>
+            </div>
+        </main>
+
+        <form id="form" class="composer">
+            <textarea id="input" rows="1" placeholder="Tulis pertanyaan kamu" aria-label="Pesan" required></textarea>
+            <button id="sendBtn" type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
