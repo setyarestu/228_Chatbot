@@ -14,3 +14,13 @@ app.get('/', (req, res) => {
 });
 
 app.post('/api/chat', async (req, res) => {
+    try {
+        const { message } = req.body;
+
+               if (!messages || !Array.isArray(messages)) {
+            return res.status(400).json({
+                error: "Messages harus berupa array"
+            });
+        }
+
+      
